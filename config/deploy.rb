@@ -1,4 +1,4 @@
-lock "~> 3.10"    # 1
+ lock "~> 3.10"    # 1
 
  set :application, "task_unicorn_app"    # 2
  set :repo_url, "https://github.com/diaraba/rails_app_unicorn.git"    # 3

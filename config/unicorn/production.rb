@@ -1,4 +1,4 @@
-worker_processes  2   # 1
+ worker_processes  2   # 1
  working_directory "/var/www/task_unicorn_app/current"    # 2
  stderr_path "log/unicorn.stderr.log"    # 3
  stdout_path "log/unicorn.stdout.log"    # 4
@@ -18,7 +18,7 @@ worker_processes  2   # 1
      end
    end
  end
-
+ 
  after_fork do |server, worker|    # 9
    defined?(ActiveRecord::Base) and ActiveRecord::Base.establish_connection
  end
